@@ -1,0 +1,165 @@
+import { Language, Product } from '../types';
+
+export const translations = {
+  ge: {
+    home: 'მთავარი',
+    categories: 'კატეგორიები',
+    cart: 'კალათა',
+    profile: 'პროფილი',
+    search: 'ძიება...',
+    inStock: 'მარაგშია',
+    outOfStock: 'არ არის მარაგში',
+    harvested: 'მოიკრიფა:',
+    addToCart: 'კალათაში დამატება',
+    checkout: 'ყიდვა',
+    delivery: 'მოტანა',
+    pickup: 'ადგილზე აღება',
+    driverNote: 'მომწერე კურიერს',
+    driverNotePlaceholder: 'მაგ: კოდი ოთხნიშნაა: #1234',
+    payWithBalance: 'ბალანსით გადახდა',
+    total: 'ჯამი',
+    balance: 'ბალანსი',
+    bankTransfer: 'ბანკით გადარიცხვა',
+    promos: 'აქციები',
+    filters: {
+      onlyPromos: 'მხოლოდ აქციები',
+      inStock: 'მხოლოდ მარაგშია',
+      discounted: 'ფასდაკლებით',
+      oldToNew: 'ძველიდან ახლისკენ',
+      newToOld: 'ახლიდან ძველისკენ',
+    },
+    topUp: 'ბალანსის შევსება',
+    orderHistory: 'შეკვეთების ისტორია',
+    acceptCookies: 'ვეთანხმები',
+    cookieText: 'ჩვენ ვიყენებთ ქუქი-ფაილებს საუკეთესო გამოცდილების უზრუნველსაყოფად.',
+    promoModalTitle: 'სპეციალური შეთავაზება!',
+    promoModalText: 'მიიღეთ 10% ფასდაკლება პირველ შეკვეთაზე.',
+    close: 'დახურვა',
+    login: 'შესვლა',
+  },
+  en: {
+    home: 'Home',
+    categories: 'Categories',
+    cart: 'Cart',
+    profile: 'Profile',
+    search: 'Search...',
+    inStock: 'In Stock',
+    outOfStock: 'Out of Stock',
+    harvested: 'Harvested:',
+    addToCart: 'Add to Cart',
+    checkout: 'Checkout',
+    delivery: 'Delivery',
+    pickup: 'Pickup',
+    driverNote: 'Note to Courier',
+    driverNotePlaceholder: 'e.g. Call upon arrival',
+    payWithBalance: 'Pay with Balance',
+    total: 'Total',
+    balance: 'Balance',
+    bankTransfer: 'Bank Transfer',
+    promos: 'Promotions',
+    filters: {
+      onlyPromos: 'Only Promos',
+      inStock: 'In Stock',
+      discounted: 'Discounted',
+      oldToNew: 'Old to New',
+      newToOld: 'New to Old',
+    },
+    topUp: 'Top Up Balance',
+    orderHistory: 'Order History',
+    acceptCookies: 'Accept',
+    cookieText: 'We use cookies to ensure you get the best experience on our website.',
+    promoModalTitle: 'Special Offer!',
+    promoModalText: 'Get 10% off your first order.',
+    close: 'Close',
+    login: 'Log In',
+  },
+  ru: {
+    home: 'Главная',
+    categories: 'Категории',
+    cart: 'Корзина',
+    profile: 'Профиль',
+    search: 'Поиск...',
+    inStock: 'В наличии',
+    outOfStock: 'Нет в наличии',
+    harvested: 'Собрано:',
+    addToCart: 'В корзину',
+    checkout: 'Оформить',
+    delivery: 'Доставка',
+    pickup: 'Самовывоз',
+    driverNote: 'Заметка курьеру',
+    driverNotePlaceholder: 'Нап: Код домофона 1234',
+    payWithBalance: 'Оплата балансом',
+    total: 'Итого',
+    balance: 'Баланс',
+    bankTransfer: 'Банковский перевод',
+    promos: 'Акции',
+    filters: {
+      onlyPromos: 'Только акции',
+      inStock: 'В наличии',
+      discounted: 'Со скидкой',
+      oldToNew: 'Сначала старые',
+      newToOld: 'Сначала новые',
+    },
+    topUp: 'Пополнить баланс',
+    orderHistory: 'История заказов',
+    acceptCookies: 'Принять',
+    cookieText: 'Мы используем файлы cookie для улучшения работы сайта.',
+    promoModalTitle: 'Специальное предложение!',
+    promoModalText: 'Получите скидку 10% на первый заказ.',
+    close: 'Закрыть',
+    login: 'Войти',
+  }
+};
+
+export const sampleProducts: Product[] = [
+  {
+    id: 'p1',
+    title: { ge: 'ორგანული პომიდორი', en: 'Organic Tomato', ru: 'Органический помидор' },
+    category: 'vegetables',
+    price: 4.50,
+    inStock: true,
+    harvestDate: 'დღეს დილით',
+    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800&q=80',
+  },
+  {
+    id: 'p2',
+    title: { ge: 'სოფლის კიტრი', en: 'Village Cucumber', ru: 'Деревенский огурец' },
+    category: 'vegetables',
+    price: 3.20,
+    discountPrice: 2.80,
+    inStock: true,
+    harvestDate: 'გუშინ',
+    image: 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?w=800&q=80',
+  },
+  {
+    id: 'p3',
+    title: { ge: 'წითელი ვაშლი', en: 'Red Apple', ru: 'Красное яблоко' },
+    category: 'fruits',
+    price: 5.00,
+    inStock: true,
+    harvestDate: '2 დღის წინ',
+    image: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6faa6?w=800&q=80',
+  },
+  {
+    id: 'p4',
+    title: { ge: 'ახალი მარწყვი', en: 'Fresh Strawberry', ru: 'Свежая клубника' },
+    category: 'fruits',
+    price: 12.00,
+    discountPrice: 9.50,
+    inStock: false,
+    image: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=800&q=80',
+  }
+];
+
+export const t = (lang: Language, key: keyof typeof translations['ge'] | string): any => {
+  const keys = key.split('.');
+  let value: any = translations[lang];
+  for (const k of keys) {
+    if (value && typeof value === 'object' && k in value) {
+      value = value[k];
+    } else {
+      return key;
+    }
+  }
+  return value;
+};
